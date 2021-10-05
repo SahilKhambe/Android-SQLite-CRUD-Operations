@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Android SQLite CRUD Operations"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/textView"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:text="Add Contact"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/main_add_contact"
+        android:onClick="mainAddContact"
+        android:layout_below="@+id/textView"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:text="View Contact"
+        android:layout_marginTop="45dp"
+        android:id="@+id/main_view_contact"
+        android:onClick="mainViewContact"
+        android:layout_alignLeft="@+id/main_add_contact"
+        android:layout_alignStart="@+id/main_add_contact"
+        android:layout_below="@+id/main_add_contact"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:text="Search Contact"
+        android:layout_marginTop="40dp"
+        android:id="@+id/main_search_contact"
+        android:onClick="mainSearchContact"
+        android:layout_below="@+id/main_view_contact"
+        android:layout_alignRight="@+id/main_view_contact"
+        android:layout_alignEnd="@+id/main_view_contact"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:text="Update Contact"
+        android:layout_marginTop="40dp"
+        android:id="@+id/main_update_contact"
+        android:onClick="mainUpdateContact"
+        android:layout_alignLeft="@+id/main_search_contact"
+        android:layout_alignStart="@+id/main_search_contact"
+        android:layout_below="@+id/main_search_contact"/>
+
+</LinearLayout>

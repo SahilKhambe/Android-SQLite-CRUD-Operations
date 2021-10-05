@@ -1,0 +1,2 @@
+rootProject.name = "Android SQLite Operations"
+include ':app'
